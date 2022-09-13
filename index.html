@@ -12,33 +12,50 @@
         <img class="aside-picture" src="./assets/img/natali-hordiiuk-cHFOiL-lYLI-unsplash.jpg" alt="photograph of someone pouring coffee in a glass">
     </aside>
     <main>
-        <header>
+        <header class="main-header">
             <p>This is not a real online service! You know you need something like this in you life to help you realize your deepest dreams. 
                 Sign up <em>now</em> to get started.
             </p>
             <p>You <em>know</em> you want to.</p>
         </header>
-         <h3>Let's do this!</h3>   
-        <form action="" method="post">
-            <label for="userFirstName">FIRST NAME</label>
-            <input type="text" name="userFirstName" id="userFirstName" required>
-
-            <label for="userEmail">EMAIL</label>
-            <input type="email" name="userEmail" id="userEmail" required>
-
-            <label for="userPassword">PASSWORD</label>
-            <input type="password" name="userPassword" id="userPassword" required>
-
-            <label for="userLastName">LAST NAME</label>
-            <input type="text" name="userLastName" id="userLastName" required>
-
-            <label for="userPhoneNumber">PHONE NUMBER</label>
-            <input type="tel" name="userPhoneNumber" id="userPhoneNumber" required>
-
-            <label for="confirmPassword">CONFIRM PASSWORD</label>
-            <input type="password" name="confirmPassword" id="confirmPassword" required>
-        </form> 
-        <footer></footer>       
+        <div class="sign-up-form">
+            <h3 class="sign-up-heading">Let's do this!</h3>
+            <form action="" method="post">
+                <div class="left-side-inputs">
+                    <div class="inputs">
+                        <label for="userFirstName">FIRST NAME</label>
+                        <input type="text" name="userFirstName" id="userFirstName" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="userEmail">EMAIL</label>
+                        <input type="email" name="userEmail" id="userEmail" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="userPassword">PASSWORD</label>
+                        <input type="password" name="userPassword" id="userPassword" required>
+                    </div>
+                </div>
+                <div class="right-side-inputs">
+                    <div class="inputs">
+                        <label for="userLastName">LAST NAME</label>
+                        <input type="text" name="userLastName" id="userLastName" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="userPhoneNumber">PHONE NUMBER</label>
+                        <input type="tel" name="userPhoneNumber" id="userPhoneNumber" required>
+                    </div>
+                    <div class="inputs">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" required>
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+        <footer>
+            <button class="btn-create-account">Create Account</button>
+            <p>Already have an account? <a href="">Log in</a></p>
+        </footer>       
     </main>   
 </body>
 </html>

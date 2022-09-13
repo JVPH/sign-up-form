@@ -15,10 +15,9 @@ html {
 body {
     display: grid;
     grid-template-columns: 1fr 2fr;   
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter', sans-serif;    
+   
 }
-
-
 
 .aside-picture {
     width: min(650px, 35vw);
@@ -26,12 +25,71 @@ body {
     object-fit: cover;
 }
 
-main {
-   padding: 2rem;
+main {   
+   display: flex;
+   flex-direction: column;   
 }
 
-form {
+.main-header {
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.sign-up-form {
+    padding: 0px 3rem;
+    background-color: #FFFFFF;
+    flex-grow: 1;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0,0.75);
+}
+
+form { 
+    display: flex;
+    gap: 2rem;
+}
+
+input {
+    width: 15rem;
+    height: 1.6rem;
+    border-radius: 6px;
+    border: 1px solid #E5E7EB;
+    
+}
+
+input:focus {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+}
+
+.btn-create-account {
+    border-radius: 7px;
+    border-style: 1px solid #040303;
+    font-size: 1.2rem;
+    padding: 1em 2em;
+    background-color: #81230B;
+    color: white;
+}
+
+button:hover {
+    filter: brightness(1.2);
+}
+
+footer,
+header {
+    background-color: #F9FAFB;
+    flex-grow: 2;
+}
+
+footer, header {
+    padding: 2rem 3rem;
+}
+
+.sign-up-heading {
+    font-size: 1.5rem;
 }
