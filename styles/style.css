@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;500;600;700&display=swap');
 
 
 
 body, html {
     margin: 0;
     padding: 0;
-    overflow: hidden;
 }
 
 html {
@@ -16,13 +15,24 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr;   
     font-family: 'Inter', sans-serif;    
+    font-weight: 500;
    
 }
 
+.bold {
+    font-weight: 600;
+}
+
+aside {
+    background-color: #15120D;
+}
+
+
 .aside-picture {
-    width: min(650px, 35vw);
+    width: min(100%, 35vw);
     height: 100vh;
     object-fit: cover;
+    display: block;
 }
 
 main {   

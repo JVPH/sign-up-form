@@ -13,14 +13,14 @@
     </aside>
     <main>
         <header class="main-header">
-            <p>This is not a real online service! You know you need something like this in you life to help you realize your deepest dreams. 
+            <p class="bold">This is not a real online service! You know you need something<br> like this in you life to help you realize your deepest dreams.<br> 
                 Sign up <em>now</em> to get started.
             </p>
-            <p>You <em>know</em> you want to.</p>
+            <p class="bold">You <em>know</em> you want to.</p>
         </header>
         <div class="sign-up-form">
             <h3 class="sign-up-heading">Let's do this!</h3>
-            <form action="" method="post">
+            <form action="#" method="post" autocomplete="off">
                 <div class="left-side-inputs">
                     <div class="inputs">
                         <label for="userFirstName">FIRST NAME</label>
@@ -34,6 +34,7 @@
                         <label for="userPassword">PASSWORD</label>
                         <input type="password" name="userPassword" id="userPassword" required>
                     </div>
+                    <button type="submit" class="btn-create-account">Create Account</button>
                 </div>
                 <div class="right-side-inputs">
                     <div class="inputs">
@@ -42,18 +43,19 @@
                     </div>
                     <div class="inputs">
                         <label for="userPhoneNumber">PHONE NUMBER</label>
-                        <input type="tel" name="userPhoneNumber" id="userPhoneNumber" required>
+                        <input type="tel" name="userPhoneNumber" id="userPhoneNumber" pattern="(\d{3}\d{3}\d{4})" required>
                     </div>
                     <div class="inputs">
                         <label for="confirmPassword">CONFIRM PASSWORD</label>
                         <input type="password" name="confirmPassword" id="confirmPassword" required>
                     </div>
                 </div>
+                
             
             </form>
         </div>
         <footer>
-            <button class="btn-create-account">Create Account</button>
+            
             <p>Already have an account? <a href="">Log in</a></p>
         </footer>       
     </main>   
