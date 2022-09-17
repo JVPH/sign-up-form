@@ -56,11 +56,11 @@ main {
 
 form { 
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 input {
-    width: 15rem;
+    width: 25rem;
     height: 1.6rem;
     border-radius: 6px;
     border: 1px solid #E5E7EB;    
@@ -91,6 +91,7 @@ input:focus {
     padding: 1em 2em;
     background-color: #81230B;
     color: white;
+    cursor: pointer;
 }
 
 button:hover {
